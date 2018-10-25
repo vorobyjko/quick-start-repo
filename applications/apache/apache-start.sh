@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Start Apache Server"
-systemctl start apache2
-
+echo "Restart Apache Server"
+systemctl restart apache2

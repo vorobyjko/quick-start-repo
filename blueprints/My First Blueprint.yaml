@@ -18,7 +18,7 @@ clouds:
 
 
 inputs:
-  - apache_port: 3306     # (info) This input allows users to define the apache server port
+  - apache_port: 1234     # (info) This input allows users to define the apache server port
 artifacts:                # (info) This blueprint does not require artifcats to be pulled from an artifact repository
 applications:             # (info) deploy 1 instance of Apache, definitions are located in applications/apache folder
   - apache:

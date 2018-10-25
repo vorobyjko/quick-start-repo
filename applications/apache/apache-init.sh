@@ -21,3 +21,4 @@ systemctl enable apache2
 echo "Configuring the listening port"
 sed -i "s/Listen 80/Listen $port_number/g" /etc/apache2/ports.conf
 sed -i "s/80/$port_number /g" /etc/apache2/sites-enabled/000-default.conf
+systemctl start apache2
