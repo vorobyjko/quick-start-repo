@@ -14,7 +14,7 @@ metadata:
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 clouds:
 #  - aws: eu-west-1     # AWS
-  - azure: westus      # AZURE
+#  - azure: westus      # AZURE
 
 
 inputs:

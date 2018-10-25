@@ -12,9 +12,9 @@ source:
 #        region: eu-west-1                                  # AWS
 #        username: ubuntu                                   # AWS
 
-    azure_image:                                           # AZURE
-      - urn: Canonical:UbuntuServer:16.04-LTS:latest       # AZURE
-        username: adminuser                                # AZURE
+#    azure_image:                                           # AZURE
+#      - urn: Canonical:UbuntuServer:16.04-LTS:latest       # AZURE
+#        username: adminuser                                # AZURE
 
 
 inputs:                             # (info) Dclaration that the application requires a port number input
