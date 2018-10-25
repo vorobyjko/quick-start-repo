@@ -1,0 +1,32 @@
+#
+#    Follow the INSTRUCTIONS in this yaml file and the applications/apache/apache.yaml file
+#    For more information please read our guide: https://colonysupport.quali.com/hc/en-us/sections/360000179948-Developing-Blueprints
+---
+spec_version: 1
+kind: blueprint
+
+metadata:
+  description: Template blueprint to help you get started with blueprint development
+
+
+clouds:
+#  - aws: eu-west-1     # (INSTRUCTION) Uncomment this line if you want to deploy to AWS
+#  - azure: westus      # (INSTRUCTION) Uncomment this line if you want to deploy to AZURE
+
+
+inputs:
+  - apache_port: 3306   # (info) This input allows users to define the apache server port
+
+
+artifacts:              # (info) This blueprint does not require artifcats to be pulled from an artifact repository
+
+
+applications:
+  - apache:             # (info) deploy 1 instance of Apache, definitions are located in applications/apache folder
+      instances: 1
+      input_values:
+        - port_number : $apache_port  # (info) The apache_port input will be sent to the apache definitions
+#      depends_on:                    # (info) No dependencies, as appache is the only application in this blueprint.
+
+
+
