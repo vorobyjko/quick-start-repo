@@ -1,0 +1,29 @@
+#
+
+---
+spec_version: 1
+kind: blueprint
+
+metadata:
+  description: >
+    A Java Spring website deployed on a TomCat
+    server and MySQL database
+
+clouds:
+  - aws: eu-west-1
+
+# These are the blueprint parameters and their default values.
+# The values can be changed when creating a sandbox based on this
+# blueprint.
+inputs:
+  - my_application_port: 3306
+
+  # Used to define the db admin password
+  - DB_NAME: demo_db  # DB_NAME - a target database name
+
+# These are the applications that will be deployed in this blueprint
+applications:
+  - my_application:  # One instance of mysql (see: applications/mysql/mysql.yaml)
+      input_values:
+        - port_number : $my_application_port
+

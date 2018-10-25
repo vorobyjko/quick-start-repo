@@ -8,9 +8,8 @@ kind: application
 # These inputs are used by the initialization script to set up
 # a database administrator account
 inputs:
-  - DB_USER
-  - DB_PASS
-  - DB_NAME
+  - port_number
+
 
 # This section defines the infrastructure requirements for the application
 infrastructure:
@@ -26,7 +25,7 @@ infrastructure:
     # Port 3306 will be opened internally to receive database requests
     internal:
       - port_info:
-          port: 3306
+          port: $port_number
 
 source:
   os_type: linux
