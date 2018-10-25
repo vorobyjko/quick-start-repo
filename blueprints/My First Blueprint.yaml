@@ -13,8 +13,8 @@ metadata:
 # TO-DO >> Uncomment one of the lines below to select your target cloud provider
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 clouds:
-  - aws: eu-west-1     # AWS
-#  - azure: westus      # AZURE
+#  - aws: eu-west-1     # AWS
+  - azure: westus      # AZURE
 
 
 inputs:
