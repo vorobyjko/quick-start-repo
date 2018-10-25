@@ -1,68 +1,42 @@
-#
-# This application file defines how to deploy and configure a MySQL server
-#
----
 spec_version: 1
 kind: application
 
-# These inputs are used by the initialization script to set up
-# a database administrator account
-inputs:
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# TO-DO >> Uncomment the lines below to define the source image based on your cloud provider
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+source:
+  os_type: linux
+  image:
+    ami:                                                   # AWS
+      - id: ami-f90a4880                                   # AWS
+        region: eu-west-1                                  # AWS
+        username: ubuntu                                   # AWS
+
+#    azure_image:                                           # AZURE
+#      - urn: Canonical:UbuntuServer:16.04-LTS:latest       # AZURE
+#        username: adminuser                                # AZURE
+
+
+inputs:                             # (info) Dclaration that the application requires a port number input
   - port_number
-
-
-# This section defines the infrastructure requirements for the application
-infrastructure:
-  # Specify the compute requirement for this app
-  # if we don't specify anything the default will be used
+infrastructure:                     # (info) vm sizes definition
   compute:
     spec:
       aws:
         instance_type: t2.medium
       azure:
         vm_size: Basic_A2
-  connectivity:
-    # Port 3306 will be opened internally to receive database requests
-    internal:
+  connectivity:                     # (info) connectivity definition
+    external:
       - port_info:
-          port: $port_number
-
-source:
-  os_type: linux
-  image:
-    # This is a clean Ubuntu server image that will
-    # be used to create a new EC2 instance in the defined
-    # AWS region
-    ami:
-      - id: ami-f90a4880
-        region: eu-west-1
-        username: ubuntu
-    azure_image:
-      - urn: Canonical:UbuntuServer:16.04-LTS:latest
-        username: adminuser
-    docker_image:
-      - tag: 16.04
-        name: ubuntu
-
-configuration:
-  # The initialization script is intended to install
-  # app prerequisite and initialize the OS
-  # This script installs mysql on a clean Ubuntu OS,
-  # sets up a root account and creates an empty database
-  # for the application
+          port: $port_number        # (info) the port number values is taken from the declared input
+configuration:                      # (info) deployment scripts
   initialization:
-    script: mysql.sh
-  # This script restarts the mysql.service process after
-  # the initialization completes
-  # The start script contains the commands
-  # needed to start the application process
+    script: apache-init.sh
   start:
-    script: mysql-start.sh
-  # To validate the installation, we wait to see that
-  # the ports are available
+    script: apache-start.sh
   healthcheck:
     wait_for_ports: ALL
     timeout: 180
-
 debugging:
   connection_protocol: SSH
