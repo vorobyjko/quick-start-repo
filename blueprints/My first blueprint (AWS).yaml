@@ -10,7 +10,6 @@ metadata:
 
 clouds:
   - aws: eu-west-1     # AWS
-#  - azure: westus      # AZURE
 
 
 inputs:
