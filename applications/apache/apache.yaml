@@ -7,9 +7,7 @@ source:
     ami:                                                   # AWS Image details
       - id: ami-f90a4880
         region: eu-west-1
-        username: ubuntu                                   # user name for SSH https://colonysupport.quali.com/hc/en-us/articles/360001043707-Sandbox-Statuses
-
-
+        username: ubuntu                                   # user name for SSH 
 inputs:                             # Declaration that the application requires a port number input
   - port_number
 
