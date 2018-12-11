@@ -5,16 +5,18 @@ spec_version: 1
 kind: blueprint
 
 metadata:
-  description: Publish this template blueprint to your catalog, explore the YAML file and learn how to create your own blueprints
+  description: Template blueprint that deploys and configures an Apache server. Explore the YAML file, modify it and start modeling your own environments
 
 
 clouds:
-  - aws: eu-west-1     # AWS
+  - aws: eu-west-1     # AWS Ireland
 
 
 inputs:
   - apache_port: 1234     # This input allows users to define the apache server port
+
 artifacts:                # This blueprint does not require artifcats to be pulled from an artifact repository
+
 applications:             # Deploy 1 instance of Apache, definitions are located in applications/apache folder
   - apache:
       instances: 1
