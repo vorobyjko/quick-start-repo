@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc8e68a-8ef1-4e1f-8e07-7561f94a2c9f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/quick-start-aws.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/applications/apache/apache.yaml" afterPath="$PROJECT_DIR$/applications/apache/apache.yaml" />
-      <change beforePath="$PROJECT_DIR$/blueprints/Template Blueprint.yaml" afterPath="$PROJECT_DIR$/blueprints/Template Blueprint.yaml" />
+      <change beforePath="$PROJECT_DIR$/blueprints/Template Blueprint.yaml" afterPath="$PROJECT_DIR$/blueprints/My Blueprint.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="apache.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="apache.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applications/apache/apache.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="680">
+              <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Template Blueprint.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blueprints/Template Blueprint.yaml">
+      <file leaf-file-name="My Blueprint.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blueprints/My Blueprint.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -47,8 +43,8 @@
       <list>
         <option value="$PROJECT_DIR$/../quick-start-aws/blueprints/Template Blueprint.yaml" />
         <option value="$PROJECT_DIR$/../quick-start-aws/applications/apache/apache.yaml" />
-        <option value="$PROJECT_DIR$/blueprints/Template Blueprint.yaml" />
         <option value="$PROJECT_DIR$/applications/apache/apache.yaml" />
+        <option value="$PROJECT_DIR$/blueprints/Template Blueprint.yaml" />
       </list>
     </option>
   </component>
@@ -272,18 +268,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blueprints/Template Blueprint.yaml">
+    <entry file="file://$PROJECT_DIR$/applications/apache/apache.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="680">
+          <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/apache/apache.yaml">
+    <entry file="file://$PROJECT_DIR$/blueprints/My Blueprint.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding />
         </state>
       </provider>
