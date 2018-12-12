@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc8e68a-8ef1-4e1f-8e07-7561f94a2c9f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/blueprints/Template Blueprint.yaml" afterPath="$PROJECT_DIR$/blueprints/My Blueprint.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/blueprints/Azure Blueprint.yaml" />
+      <change beforePath="$PROJECT_DIR$/blueprints/My Blueprint.yaml" afterPath="$PROJECT_DIR$/blueprints/AWS Blueprint.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="My Blueprint.yaml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blueprints/My Blueprint.yaml">
+      <file leaf-file-name="AWS Blueprint.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blueprints/AWS Blueprint.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Azure Blueprint.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blueprints/Azure Blueprint.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,6 +56,9 @@
         <option value="$PROJECT_DIR$/../quick-start-aws/applications/apache/apache.yaml" />
         <option value="$PROJECT_DIR$/applications/apache/apache.yaml" />
         <option value="$PROJECT_DIR$/blueprints/Template Blueprint.yaml" />
+        <option value="$PROJECT_DIR$/blueprints/My Blueprint.yaml" />
+        <option value="$PROJECT_DIR$/blueprints/AWS Blueprint.yaml" />
+        <option value="$PROJECT_DIR$/blueprints/Azure Blueprint.yaml" />
       </list>
     </option>
   </component>
@@ -101,6 +115,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\meni.b\Desktop\colony-samples\quick-start-repo\blueprints" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -276,10 +295,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blueprints/My Blueprint.yaml">
+    <entry file="file://$PROJECT_DIR$/blueprints/AWS Blueprint.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blueprints/Azure Blueprint.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
