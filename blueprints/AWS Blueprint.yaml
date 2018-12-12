@@ -9,7 +9,7 @@ metadata:
 
 
 clouds:
-  - aws: eu-west-1     # AWS
+  - AWS: eu-west-1     # AWS
 
 inputs:
   - apache_port: 1234     # This input allows users to define the apache server port
