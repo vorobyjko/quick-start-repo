@@ -8,10 +8,11 @@ source:
       - id: ami-f90a4880
         region: eu-west-1
         username: ubuntu
-
     azure_image:                                           # Azure Image
       - urn: Canonical:UbuntuServer:16.04-LTS:latest
         username: adminuser
+
+
 
 debugging:
   connection_protocol: SSH
