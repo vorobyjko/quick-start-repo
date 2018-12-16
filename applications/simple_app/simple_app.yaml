@@ -14,5 +14,11 @@ source:
 
 
 
+configuration:
+  healthcheck:
+    wait_for_ports: ALL
+    timeout: 180
+
+
 debugging:
   connection_protocol: SSH
