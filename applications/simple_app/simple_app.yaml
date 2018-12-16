@@ -1,0 +1,30 @@
+spec_version: 1
+kind: application
+
+source:
+  os_type: linux
+  image:
+    ami:                                                   # AWS Image
+      - id: ami-f90a4880                                   # AWS Image
+        region: eu-west-1                                  # AWS Image
+        username: ubuntu                                   # AWS Image
+
+    azure_image:                                           # Azure Image
+      - urn: Canonical:UbuntuServer:16.04-LTS:latest       # Azure Image
+        username: adminuser                                # Azure Image
+
+infrastructure:
+  compute:
+    spec:
+      aws:                          # AWS - VM SIZE
+        instance_type: t2.medium
+      azure:                        # AZURE - VM SIZE
+        vm_size: Basic_A2
+
+  connectivity:                     # Connectivity definition
+    external:
+      - port_info:
+          port: $port_number        # The connectivity port is configured using a dynamic input parameter
+
+debugging:
+  connection_protocol: SSH

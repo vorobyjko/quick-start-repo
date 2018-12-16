@@ -31,9 +31,9 @@ infrastructure:
 
 configuration:                      # Application Deployment Scripts
   initialization:
-    script: apache-init.sh
+    script: init.sh
   start:
-    script: apache-start.sh
+    script: start.sh
   healthcheck:
     wait_for_ports: ALL
     timeout: 180
