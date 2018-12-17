@@ -14,8 +14,8 @@ source:
 
 configuration:
   healthcheck:
-  script: healthcheck-ping.sh
-  timeout: 180
+    script: healthcheck-ping.sh
+    timeout: 180
 
 debugging:
   connection_protocol: SSH
