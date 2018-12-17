@@ -12,15 +12,10 @@ source:
       - urn: Canonical:UbuntuServer:16.04-LTS:latest
         username: adminuser
 
-connectivity:                     # Connectivity definition
-  internal:
-    - port_info:
-        port: 100
-
 configuration:
   healthcheck:
-    wait_for_ports: ALL
-    timeout: 180
+  script: healthcheck-ping.sh
+  timeout: 180
 
 debugging:
   connection_protocol: SSH
