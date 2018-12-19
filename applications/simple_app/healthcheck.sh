@@ -1,5 +1,11 @@
 #!/bin/bash
 
 ip=$1
-nc -v -z -w 3 $ip 22 &> /dev/null && echo "Online" || echo "Offline"
+
+until timeout 1 bash -c "nc -vz $ip 22"; [[ "$?" -eq "0" ]];
+  do sleep 1;
+done;
+
+echo "$ip is online"
+
 
