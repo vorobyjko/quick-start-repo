@@ -17,7 +17,7 @@ inputs:
 artifacts:                # This blueprint does not require artifcats to be pulled from an artifact repository
 
 applications:
-  - simple_app:           # Simple Ubuntu Server from an image
+  - basic_app:           # Simple Ubuntu Server from an image
       instances: 1
 
   - advanced_app:         # two instances of Apache under a load balancer with port configuration (see: specifications in applications/apache folder)

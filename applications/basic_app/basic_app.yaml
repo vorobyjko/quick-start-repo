@@ -5,17 +5,23 @@ source:
   os_type: linux
   image:
     ami:                                                   # AWS Image
-      - id: ami-f90a4880
+      - id: ami-026434864a3b15a20
         region: eu-west-1
         username: ubuntu
     azure_image:                                           # Azure Image
       - urn: Canonical:UbuntuServer:16.04-LTS:latest
         username: adminuser
 
+infrastructure:
+  connectivity:                     # Connectivity definition
+    external:
+      - port_info:
+          port: 80
+
 configuration:
   healthcheck:
-    script: healthcheck.sh
-    timeout: 30
+    wait_for_ports: ALL
+    timeout: 180
 
 debugging:
   connection_protocol: SSH
