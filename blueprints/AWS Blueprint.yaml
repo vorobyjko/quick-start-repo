@@ -23,7 +23,7 @@ applications:
   - advanced_app:         # two instances of Apache under a load balancer with port configuration (see: specifications in applications/apache folder)
       instances: 2
       depends_on:
-        - simple_app
+        - basic_app
       input_values:
         - port_number : $external_port  # The apache_port input will be sent to the apache definitions
 

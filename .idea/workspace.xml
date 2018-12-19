@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc8e68a-8ef1-4e1f-8e07-7561f94a2c9f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/applications/simple_app/healthcheck.sh" afterPath="$PROJECT_DIR$/applications/basic_app/healthcheck.sh" />
-      <change beforePath="$PROJECT_DIR$/applications/simple_app/simple_app.yaml" afterPath="$PROJECT_DIR$/applications/basic_app/basic_app.yaml" />
       <change beforePath="$PROJECT_DIR$/blueprints/AWS Blueprint.yaml" afterPath="$PROJECT_DIR$/blueprints/AWS Blueprint.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basic_app.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="basic_app.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applications/basic_app/basic_app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -46,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AWS Blueprint.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AWS Blueprint.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blueprints/AWS Blueprint.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="425">
+              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -84,8 +81,8 @@
         <option value="$PROJECT_DIR$/applications/simple_app/healthcheck-ping.sh" />
         <option value="$PROJECT_DIR$/applications/simple_app/healthcheck.sh" />
         <option value="$PROJECT_DIR$/applications/simple_app/simple_app.yaml" />
-        <option value="$PROJECT_DIR$/blueprints/AWS Blueprint.yaml" />
         <option value="$PROJECT_DIR$/applications/basic_app/basic_app.yaml" />
+        <option value="$PROJECT_DIR$/blueprints/AWS Blueprint.yaml" />
       </list>
     </option>
   </component>
@@ -369,18 +366,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blueprints/AWS Blueprint.yaml">
+    <entry file="file://$PROJECT_DIR$/applications/basic_app/basic_app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/basic_app/basic_app.yaml">
+    <entry file="file://$PROJECT_DIR$/blueprints/AWS Blueprint.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding />
         </state>
       </provider>
