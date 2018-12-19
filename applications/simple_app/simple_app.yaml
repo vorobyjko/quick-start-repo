@@ -14,7 +14,7 @@ source:
 
 configuration:
   healthcheck:
-    script: healthcheck.sh
+    wait_for_ports: 22
     timeout: 180
 
 debugging:
