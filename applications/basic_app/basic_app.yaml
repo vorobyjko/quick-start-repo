@@ -5,7 +5,7 @@ source:
   os_type: linux
   image:
     ami:                                                   # AWS Image
-      - id: ami-12d1d16b   # ami-05aeb463
+      - id: ami-12d1d16b
         region: eu-west-1
         username: root
     azure_image:                                           # Azure Image
@@ -15,11 +15,11 @@ source:
 infrastructure:
   compute:
     spec:
-      aws:                          # AWS - VM SIZE
+      aws:
         instance_type: t2.medium
-      azure:                        # AZURE - VM SIZE
+      azure:
         vm_size: Basic_A2
-  connectivity:                     # Connectivity definition
+  connectivity:
     external:
       - port_info:
           port: 80

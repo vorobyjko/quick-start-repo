@@ -12,23 +12,23 @@ source:
       - urn: Canonical:UbuntuServer:16.04-LTS:latest
         username: adminuser
 
-inputs:                             # Declaration that the application requires a port number input
+inputs:
   - port_number
 
 infrastructure:
   compute:
     spec:
-      aws:                          # AWS - VM SIZE
+      aws:
         instance_type: t2.medium
-      azure:                        # AZURE - VM SIZE
+      azure:
         vm_size: Basic_A2
 
-  connectivity:                     # Connectivity definition
+  connectivity:
     external:
       - port_info:
-          port: $port_number        # The connectivity port is configured using a dynamic input parameter
+          port: $port_number
 
-configuration:                      # Application Deployment Scripts
+configuration:
   initialization:
     script: init.sh
   start:
