@@ -5,7 +5,7 @@ source:
   os_type: linux
   image:
     ami:                                                   # AWS Image
-      - id: ami-026434864a3b15a20
+      - id: ami-02db84402375247b0
         region: eu-west-1
         username: ubuntu
     azure_image:                                           # Azure Image

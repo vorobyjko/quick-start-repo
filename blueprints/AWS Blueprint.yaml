@@ -12,7 +12,7 @@ clouds:
   - AWS: eu-west-1     # AWS
 
 inputs:
-  - external_port: 1234     # This input allows users to define the apache server port
+  - advanced_app_port: 1234     # This input allows users to define the apache server port
 
 artifacts:                # This blueprint does not require artifcats to be pulled from an artifact repository
 
@@ -25,5 +25,5 @@ applications:
       depends_on:
         - basic_app
       input_values:
-        - port_number : $external_port  # The apache_port input will be sent to the apache definitions
+        - port_number : $advanced_app_port  # The apache_port input will be sent to the apache definitions
 
