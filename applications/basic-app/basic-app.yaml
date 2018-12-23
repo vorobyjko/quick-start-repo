@@ -9,7 +9,7 @@ source:
         region: eu-west-1
         username: root
     azure_image:                                           # Azure Image
-      - urn: Canonical:UbuntuServer:16.04-LTS:latest
+      - urn: cognosys:secured-drupal-on-centos:secured-drupal-on-centos:1.2.0
         username: adminuser
 
 infrastructure:
