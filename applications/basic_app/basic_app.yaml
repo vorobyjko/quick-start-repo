@@ -9,7 +9,7 @@ source:
         region: eu-west-1
         username: root
     azure_image:                                           # Azure Image
-      - urn: Canonical:UbuntuServer:16.04-LTS:latest
+      - urn: cognosys:secured-drupal-on-centos:secured-drupal-on-centos:1.2.0
         username: adminuser
 
 infrastructure:
@@ -31,3 +31,8 @@ configuration:
 
 debugging:
   connection_protocol: SSH
+
+
+# cognosys:secured-drupal-on-centos:secured-drupal-on-centos:1.2.0
+# Bitnami:drupal:8-0:8.6.1812060011
+# your-shop-online:herefordshire-enterprise-platform-drupal-7:herefordshire-1:1.0.0

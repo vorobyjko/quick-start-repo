@@ -1,27 +1,34 @@
+#    This is a sample blueprint that deploys two applications in AWS
+#    - basic_app - a simple 1 instance VM from an image
+#    - advanced_app - 2 VMs with a loadbalancer, configured with custom scripts with user inputs
 #
-#    Step by Step Guide: https://colonysupport.quali.com/hc/en-us/sections/360000179948-Developing-Blueprints
+#    https://colonysupport.quali.com/hc/en-us/articles/360001632548-The-Blueprint-YAML-File
+#
 ---
 spec_version: 1
 kind: blueprint
 
 metadata:
-  description: Template blueprint that deploys and configures an Apache server. Explore the YAML file, modify it and start modeling your own environments
+  description: Blueprint that deploys two applications in AWS
 
 
 clouds:
-  - azure: westus      # AZURE
+  - azure: westus
 
 inputs:
-  - apache_port: 1234     # This input allows users to define the apache server port
+  - advanced_app_port: 1234
 
-artifacts:                # This blueprint does not require artifcats to be pulled from an artifact repository
 
-applications:             # Deploy 1 instance of Apache, definitions are located in applications/apache folder
-  - apache:
+applications:
+  - basic_app:
       instances: 1
+
+  - advanced_app:
+      instances: 2
+      depends_on:
+        - basic_app
       input_values:
-        - port_number : $apache_port  # The apache_port input will be sent to the apache definitions
-#      depends_on:                    # No dependencies, as appache is the only application in this blueprint.
+        - port_number : $advanced_app_port
 
 
 
