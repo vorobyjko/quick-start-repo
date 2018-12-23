@@ -9,7 +9,7 @@ spec_version: 1
 kind: blueprint
 
 metadata:
-  description: Blueprint that deploys two applications in AWS
+  description: Blueprint that deploys two applications in Azure
 
 
 clouds:
