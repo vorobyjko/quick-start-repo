@@ -9,7 +9,7 @@ source:
         region: eu-west-1
         username: root
     azure_image:                                           # Azure Image
-      - urn: your-shop-online:herefordshire-enterprise-platform-drupal-7:herefordshire-1:1.0.0
+      - urn: cognosys:sec1019-secured-tomcat-on-ubuntu-1404:secured-tomcat-on-ubuntu:1.0.2
         username: adminuser
 
 infrastructure:
@@ -33,6 +33,3 @@ debugging:
   connection_protocol: SSH
 
 
-# cognosys:secured-drupal-on-centos:secured-drupal-on-centos:1.2.0
-# Bitnami:drupal:8-0:8.6.1812060011
-# your-shop-online:herefordshire-enterprise-platform-drupal-7:herefordshire-1:1.0.0
