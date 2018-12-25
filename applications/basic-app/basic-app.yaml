@@ -9,7 +9,7 @@ source:
         region: eu-west-1
         username: root
     azure_image:                                           # Azure Image
-      - urn: cognosys:sec1019-secured-tomcat-on-ubuntu-1404:secured-tomcat-on-ubuntu:1.0.2
+      - urn: cognosys:secured-apachesolr-on-ubuntu-14-04-lts:new-secured-apachesolr-on-ubuntu-14-04-lts:1.0.2
         username: adminuser
 
 infrastructure:
