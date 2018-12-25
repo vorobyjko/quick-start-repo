@@ -9,7 +9,7 @@ source:
         region: eu-west-1
         username: root
     azure_image:                                           # Azure Image
-      - urn: cognosys:secured-drupal-on-centos:secured-drupal-on-centos:1.2.0
+      - urn: Bitnami:drupal:8-0:8.6.1812060011
         username: adminuser
 
 infrastructure:
