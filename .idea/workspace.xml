@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc8e68a-8ef1-4e1f-8e07-7561f94a2c9f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/applications/basic-app/healthcheck.sh" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/applications/basic-app/basic-app.yaml" afterPath="$PROJECT_DIR$/applications/basic-app/basic-app.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +18,8 @@
       <file leaf-file-name="advanced-app.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applications/advanced-app/advanced-app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="52" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -26,8 +28,18 @@
       <file leaf-file-name="basic-app.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/applications/basic-app/basic-app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+            <state relative-caret-position="578">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="healthcheck.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/basic-app/healthcheck.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,6 +85,7 @@
         <option value="$PROJECT_DIR$/applications/basic_app/basic_app.yaml" />
         <option value="$PROJECT_DIR$/blueprints/Azure Blueprint.yaml" />
         <option value="$PROJECT_DIR$/blueprints/AWS Blueprint.yaml" />
+        <option value="$PROJECT_DIR$/applications/basic-app/healthcheck.sh" />
         <option value="$PROJECT_DIR$/applications/basic-app/basic-app.yaml" />
       </list>
     </option>
@@ -140,6 +153,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\meni.b\Desktop\colony-samples\quick-start-repo\applications\basic-app" />
       <recent name="C:\Users\meni.b\Desktop\colony-samples\quick-start-repo\applications" />
       <recent name="C:\Users\meni.b\Desktop\colony-samples\quick-start-repo\blueprints" />
     </key>
@@ -342,14 +356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/advanced-app/advanced-app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blueprints/AWS Blueprint.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -366,10 +372,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/applications/basic-app/healthcheck.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/advanced-app/advanced-app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/applications/basic-app/basic-app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -5,11 +5,11 @@ source:
   os_type: linux
   image:
     ami:                                                   # AWS Image
-      - id: ami-12d1d16b
+      - id: ami-f90a4880
         region: eu-west-1
         username: root
     azure_image:                                           # Azure Image
-      - urn: Bitnami:tom-cat:7-0:8.5.1812220007
+      - urn: Canonical:UbuntuServer:16.04-LTS:latest
         username: adminuser
 
 infrastructure:
@@ -26,8 +26,7 @@ infrastructure:
 
 configuration:
   healthcheck:
-    wait_for_ports: ALL
-    timeout: 180
+    script: healthcheck.sh
 
 debugging:
   connection_protocol: SSH
