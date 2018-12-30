@@ -27,7 +27,7 @@ infrastructure:
 configuration:
   healthcheck:
     script: healthcheck.sh
-
+    timeout: 180
 debugging:
   connection_protocol: SSH
 
