@@ -24,7 +24,7 @@ applications:
       instances: 1
 
   - advanced-app:
-      instances: 2
+      instances: 1
       depends_on:
         - basic-app
       input_values:
