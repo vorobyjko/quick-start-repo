@@ -19,10 +19,6 @@ infrastructure:
         instance_type: t2.medium
       azure:
         vm_size: Basic_A2
-  connectivity:
-    external:
-      - port_info:
-          port: 80
 
 configuration:
   healthcheck:
