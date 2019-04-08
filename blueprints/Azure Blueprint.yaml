@@ -12,8 +12,8 @@ metadata:
   description: Blueprint that deploys two applications in Azure
 
 
-clouds
-  azure: westus
+clouds:
+  - azure: westus
 
 inputs:
   - advanced_app_port: 1234
