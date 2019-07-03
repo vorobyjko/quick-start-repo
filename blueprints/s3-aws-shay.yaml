@@ -1,0 +1,26 @@
+kind: blueprint
+clouds:
+- aws: eu-west-1
+applications:
+- s3reader:
+    input_values:
+    - INSTANCETYPE: $INSTANCETYPE
+    - bucket: $bucket
+    - AWS_ACCESS_KEY_ID: AKIAIO4JQW6LPGSTWLZA
+    - AWS_SECRET_ACCESS_KEY: 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
+    - AWS_DEFAULT_REGION: eu-west-1
+    depends_on:
+    - s3store_test
+services:
+- s3store_test:
+    input_values:
+    - bucket: $bucket
+    - SANDBOX_ID: $SandboxId
+    - SANDBOX_DNS: $PublicAddress
+spec_version: 1
+environmentType: sandbox
+artifacts:
+- s3reader: 's3reader/s3reader.py'
+inputs:
+- INSTANCETYPE: t3.small,t3.medium,c5.large,m5.large,m4.large
+- bucket: quali-s3store
