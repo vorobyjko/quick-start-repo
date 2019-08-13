@@ -1,0 +1,45 @@
+inputs:
+- INSTANCETYPE: t3.small,t3.medium,c5.large,m5.large,m4.large
+- AZURE_VM_SIZE: Standard_D2_v3
+- BUILD_NUM: 1.0
+- SERVER_NAME: 'chronos server'
+- SERVER_VERSION: '0'
+outputs:
+- name
+- version
+configuration:
+  healthcheck:
+    wait_for_ports: ALL
+    timeout: 360
+  initialization:
+    script: init.sh
+  start:
+    script: start.sh
+source:
+  image:
+    docker_image:
+    - name: quali/ubuntu
+      tag: python36
+    ami:
+    - id: ami-00b36349b3dba2ec3
+      region: eu-west-1
+      username: ubuntu
+    azure_image:
+    - urn: Canonical:UbuntuServer:16.04-LTS:latest
+  os_type: linux
+infrastructure:
+  compute:
+    spec:
+      aws:
+        instance_type: $INSTANCETYPE
+      azure:
+        vm_size: $AZURE_VM_SIZE
+  connectivity:
+    internal:
+    - port_info:
+        port: 3001
+        path: ''
+debugging:
+  connection_protocol: SSH
+kind: application
+spec_version: 1
