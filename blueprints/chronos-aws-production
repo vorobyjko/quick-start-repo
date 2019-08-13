@@ -1,0 +1,38 @@
+kind: blueprint
+clouds:
+- aws: eu-west-1
+applications:
+- chronos-server:
+    input_values:
+    - AZURE_VM_SIZE: $INSTANCETYPE
+    - BUILD_NUM: $BUILD_NUM
+- chronos-client:
+    input_values:
+    - AZURE_VM_SIZE: $INSTANCETYPE
+    - BUILD_NUM: $BUILD_NUM
+    depends_on: 
+    - chronos-server
+spec_version: 1
+artifacts:
+- chronos-server: ''
+- chronos-client: ''
+inputs:
+- INSTANCETYPE: Basic_A1
+- BUILD_NUM
+- NETWORK_ID
+- MNG_SUBNET
+- APP_SUBNET_1
+- APP_SUBNET_2
+infrastructure:
+  connectivity:
+    green_host: green.test.com
+    virtual_network:
+       id: $NETWORK_ID
+       subnets:
+         management: 
+         - $MNG_SUBNET
+         application: 
+         - $APP_SUBNET_1
+         - $APP_SUBNET_2
+debugging:
+  availability: on
